@@ -8,7 +8,7 @@ import math
 import os
 
 
-DROP_BOX_ACCESS_TOKEN = ""
+DROP_BOX_ACCESS_TOKEN = "2051eabb0c9d2b8da0b41c7fe0c72e81"
 # get your own access token from https://www.dropbox.com/developers/apps/ and fill here
 
 
@@ -27,7 +27,7 @@ async def _(event):
         await event.edit("""Detected File Size: {}
 File Name: {}""".format(humanbytes(file_size), file_name_without_ext))
         # https://stackoverflow.com/a/678242/4723940
-        CHUNK_SIZE = 10283
+        CHUNK_SIZE = 1572595
         file_name_without_ext = "/" + file_name_without_ext
         with open(input_str, "rb") as f:
             # https://stackoverflow.com/a/37399658/4723940
